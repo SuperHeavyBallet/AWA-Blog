@@ -118,6 +118,11 @@ body{
 
 }
 
+@media only screen and (max-width: 1200px) {
+    * {
+      background-color: rgb(0, 0, 0);
+    }
+  }
 
 
 

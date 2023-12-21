@@ -9,7 +9,7 @@
 }
 
 :root{
-    --dark-colour: #333333;
+    --dark-colour: #111111;
     --light-colour: #fff;
     --contrast-colour: #ff9b00;
 }
@@ -18,7 +18,7 @@ body{
    
     margin: 0;
     padding: 0;  
-    background-color: rgb(240, 241, 241);
+    background-color: rgb(249, 250, 250);
 }
 
 .nav-bar{
@@ -298,6 +298,11 @@ body{
     
   }
 
+  .card-anchor{
+    text-decoration: none;
+    color: inherit;
+  }
+
   .post-card{
     width: 280px;
     height: 300px;
@@ -307,6 +312,18 @@ body{
     margin: 1vw 2vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
+    overflow: hidden;
+    
+  }
+
+
+
+  .post-card > img{
+    width: auto;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  
   }
 
   .card-text-area{
@@ -344,11 +361,11 @@ body{
  }
 
  .search-area >input{
-    width: 10vw;
+    width: 200px;
     height: 2.7vh;
     border-radius: 3px;
     border: 1px solid var(--dark-colour);
-    padding: 0.3vw;
+    padding: 10px;
  }
 
  /*Explore Cards*/

@@ -12,13 +12,14 @@
     --dark-colour: #111111;
     --light-colour: #fff;
     --contrast-colour: #ff9b00;
+    
 }
 
 body{
    
     margin: 0;
     padding: 0;  
-    background-color: rgb(249, 250, 250);
+    background-color: rgb(0, 0, 0);
 }
 
 .nav-bar{
@@ -38,6 +39,7 @@ body{
     padding-right: 3vw;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.356);
     height: 6vh;
+    border-bottom: 1px solid var(--light-colour);
 }
 
 .nav-bar > .logo
@@ -46,22 +48,36 @@ body{
     display: flex;
     padding-left: 3vw;
     align-items: center;
+    justify-content: center;
+
+
+   
 }
 
 .nav-bar > .logo > h3{
     margin: 0;
     font-size: x-large;
+    color: var(--light-colour);
+    
+
+
 }
+
 
 .page-links
 {
     flex: 2;
     align-items: center;
+    
 }
 
 .social-media{
     flex: 0.5;
     align-items: center;
+}
+
+.page-links{
+    border-right: 1px solid var(--light-colour);
 }
 
 .page-links h3
@@ -72,6 +88,8 @@ body{
     padding-top: 1vh;
     margin: 0;
     padding-right: 3vw;
+
+
 }
 
 .social-media h3{
@@ -92,7 +110,11 @@ body{
 
 .page-links h3 a:hover{
     color: var(--light-colour);
+
+
+   
 }
+
 
 .nav-bar > .social-media > h3 > a:hover{
     color: var(--contrast-colour);
@@ -257,7 +279,10 @@ body{
   }
 
   .body-area{
-    margin-top: 10vh;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   /*Home Page*/
 
@@ -265,12 +290,16 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 1vh;
+
+    padding: 2vh 0;
+    
   }
+
 
   .head-text p{
     margin: 0.3vh;
-    color: var(--dark-colour);
+    color: var(--light-colour);
   }
 
   .first-line-title{
@@ -281,6 +310,10 @@ body{
 
   .recent-posts{
     margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .recent-posts > h4{
@@ -289,7 +322,10 @@ body{
     justify-content: center;
 
     margin-bottom: 2vh;
+    padding: 0.5rem;
     color: var(--dark-colour);
+    background-color: var(--contrast-colour);
+    width: 16rem;
   }
 
   .recent-posts-container{
@@ -301,6 +337,11 @@ body{
   .card-anchor{
     text-decoration: none;
     color: inherit;
+    transition: transform 0.2s ease-out;
+  }
+  .card-anchor:hover{
+    transform: scale(103%);
+    
   }
 
   .post-card{
@@ -314,6 +355,16 @@ body{
     position: relative;
     overflow: hidden;
     
+  }
+
+  .post-card > .copyright-box{
+    color: var(--light-colour);
+    position: absolute;
+    right: 0;
+    padding: 2px 4px;
+    font-size: small;
+    border-radius: 0 0 0 5px;
+    background-color: rgba(0, 0, 0, 0.288)
   }
 
 
@@ -336,7 +387,7 @@ body{
 }
 
 .card-text-area h4{
-    padding: 1vh 0.5vw 0.5vh 0.5vw;
+    padding: 8px 5px 4px 5px;
 }
 
   .card-text-sub-area{
@@ -351,27 +402,48 @@ body{
  .search-area{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 2vh;
+    margin: 4vh 0 1vh 0;
+
 
  }
 
  .search-area >h4{
     padding: 0.5vw;
+    color: var(--light-colour);
  }
 
- .search-area >input{
+ .search-area input{
     width: 200px;
     height: 2.7vh;
     border-radius: 3px;
     border: 1px solid var(--dark-colour);
     padding: 10px;
+    
+    
+ }
+
+ .search-area button{
+    height: 2.7vh;
+    padding: 1px 5px;
+    background-color: var(--contrast-colour);
+    border: none;
+    border-radius: 3px;
+    color: var(--dark-colour);
+    cursor: pointer;
+
+ }
+
+ .search-area button:hover{
+    transform: scale(103%);
  }
 
  /*Explore Cards*/
 
  .explore-cards >h4{
     text-align: center;
+    color: var(--light-colour);
  }
 
  /*Foot Area*/
